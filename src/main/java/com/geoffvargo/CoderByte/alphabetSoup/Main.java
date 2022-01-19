@@ -16,6 +16,18 @@ class Main {
 	
 	public static String AlphabetSoup(String str) {
 		// code goes here
-		return str;
+		StringBuilder ans = new StringBuilder();
+		
+		List<String> temp = new ArrayList<>(Arrays.asList(str.split("")));
+		
+		temp.sort(null);
+		
+//		temp.forEach(System.out::println);
+		
+		for (String s : temp) {
+			ans.append(s);
+		}
+		
+		return ans.toString();
 	}
 }
